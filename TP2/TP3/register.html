@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP03-DH|Formar</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de usuario</h1>
+    </header>
+    <main>
+        <form id="formulario-registro" action="../home.html" method="get">
+        <div>
+            <label for="nombre-y-apellido">Nombre y Apellido:</label>
+            <input type="text" class="nombre-y-apellido" name="nombre-y-apellido" id="nombre-y-apellido" required>
+        </div>
+        <div>
+            <label for="nombre-usuario">Nombre de Usuari@</label>
+            <input type="text" class="nombre-usuario" id="nombre-usuario" name="nombre-usuario" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" class="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" class="fecha-nacimiento" name="fecha-nacimiento" id="fecha-nacimiento" required>
+        </div>
+        <div>
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" class="domicilio" id="domicilio" name="domicilio" required>
+        </div>
+        <div>
+            <label for="perfil-usuario">Perfil del Usuario:</label>
+            <select id="perfil-usuario" name="perfilUsuario" required>
+                <option value="" disabled selected>Selecione uno</option>
+                <option value="comprar">Comprar</option>
+                <option value="vender">Vender</option>
+            </select>
+        </div>
+        <div>
+            <label>Categorías de Interés:</label><br>
+            <input type="checkbox" class="categoria-electro" name="categorias-interes" id="categoria-electro" value="Electro">
+            <label for="categoria-electro">Electro</label><br>
+            <input type="checkbox" class="categoria-moda" name="categorias-interes" id="categoria-moda"  value="Moda">
+            <label for="categoria-moda">Moda</label><br>
+            <input type="checkbox" class="categoria-hogar" id="categoria-hogar" name="categorias-interes" value="Hogar">
+            <label for="categoria-hogar">Hogar</label><br>
+            <input type="checkbox" class="categoria-jugueteria" id="categoria-jugueteria"  name="categoria-interes" value="Juguetería">
+            <label for="categoria-jugueteria">Juguetería</label><br>
+            <input type="checkbox" class="categoria-vida-sana" id="categoria-vida-sana"  name="categorias-interes" value="Vida sana">
+            <label for="categoria-vida-sana">Vida sana</label><br>
+        </div>
+        <div>
+            <label for="foto-usuario">Foto de Usuario:</label>
+            <input type="file" class="foto-usuario" id="foto-usuario"  name="foto-usuario" required>
+        </div>
+        <div>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" class="contraseña" id="contraseña" name="contraseña" required>
+        </div>
+        <div>
+            <label for="confirmar-contraseña">Confirmar Contraseña:</label>
+            <input type="password" class="confirmar-contraseña" id="confirmar-contraseña"  name="confirmar-contraseña" required>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar Todo</button>
+        </div>
+    </form>
+    </main><hr>
+    <footer>
+        <p>Copyright © 2024. Matias Heredia.</p>
+    </footer>
+</body>
+</html>
