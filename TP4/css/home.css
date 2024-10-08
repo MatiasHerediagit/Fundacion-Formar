@@ -1,56 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 *{
     font-family: 'Roboto', sans-serif;
 }
-header{
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
     width: 100%;
-    background-color:#EAC926;
+    background-color: #EAC926;
     padding: 25px 0;
 }
-nav ul  {
-    list-style-type: none; 
-    padding: 0;  
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-form, p i{
+
+form, p i {
     padding-left: 10px;
 }
+
 button {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-button i {
-    font-size: 11px; 
-    color: black; 
 
+button i {
+    font-size: 11px;
+    color: black;
 }
+
 p i {
     margin-left: 30px;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 400;
 }
 
 header nav .burger-menu {
-    padding: 10px; 
-    font-size: 25px; 
+    padding: 10px;
+    font-size: 25px;
     background-color: #1259c3;
-    color: white; 
-    border-radius: 5px; 
+    color: white;
+    border-radius: 5px;
     display: flex; 
-    justify-content: center; 
-    width: fit-content; 
-    margin: 10px auto; 
+    justify-content: center;
+    width: fit-content;
+    margin: 10px auto;
 }
+header, main, footer {
+    padding: 1rem;
+}
+main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-top: 1px solid #ebebeb;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+}
+
+article img {
+    width: 80%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+article div p {
+    margin: 3px;
+}
+
+.caja-interna {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.precio {
+    font-size: 110%;
+}
+
+.descuento {
+    color: green;
+    font-size: 90%;
+}
+
+.icono-circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid green;
+    border-radius: 50%;
+    margin-bottom: 12px; 
+}
+
+.icono-circulo i {
+    color: green;
+    font-size: 1.3rem;
+}
+
 footer {
-    color:#666;
+    color: #666;
     padding: 20px;
     text-align: center;
 }
@@ -61,11 +132,13 @@ footer section {
     align-items: center; 
     margin-bottom: 20px;
 }
-footer section i{
+
+footer section i {
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
 }
+
 footer h4 {
     font-weight: bold;
     font-size: 18px;
@@ -76,4 +149,88 @@ footer p {
     letter-spacing: 0px;
     font-size: 14px;
     line-height: 1.4;
+}
+
+
+header nav.site-menu,
+header nav.login-menu {
+    display: none;
+}
+
+.descripcion {
+    display: none;
+}
+
+.burger-menu {
+    display: flex ;
+}
+
+
+@media (min-width: 768px) {
+    header form {
+        flex-direction: row;
+    }
+
+    header input {
+        margin-right: 10px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main img {
+        max-width: 600px;
+    }
+
+    article img {
+        max-width: 250px;
+    }
+
+    .descripcion {
+        display: block;
+    }
+
+
+    header nav.site-menu,
+    header nav.login-menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .burger-menu {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    header form {
+        flex-direction: row;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main {
+        padding: 2rem 10%;
+    }
+
+    article {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    article img {
+        max-width: 300px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }
