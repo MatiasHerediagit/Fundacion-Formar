@@ -1,0 +1,81 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    background-color:#EAC926;
+    padding: 25px 0;
+}
+nav ul  {
+    list-style-type: none; 
+    padding: 0;  
+}
+form, p i{
+    padding-left: 10px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Para que el botón sea redondo */
+}
+
+button i {
+    font-size: 11px; 
+    color: black; 
+
+}
+
+
+p i {
+    margin-left: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+header nav .burger-menu {
+    padding: 10px; 
+    font-size: 25px; 
+    background-color: #1259c3;
+    color: white; 
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: center; 
+    width: fit-content; 
+    margin: 10px auto; 
+}
+footer {
+    color:#666;
+    padding: 20px;
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 20px;
+}
+footer section i{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    letter-spacing: 0px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+

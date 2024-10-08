@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Register - Mercado Liebre</title>
+</head>
+<body>
+    <header>
+        <img src="../images/logo-mercado-liebre.svg" alt="logo-mercado-libre" /><br /><br />
+        <form action="home.html" method="get">
+          <input type="text" placeholder="Busca aquí tus productos" /><br>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button><br />
+        </form><br>
+        <p> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p><br /><br />
+        <nav>
+          <ul>
+            <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales#menu=categories" target="_blank">Tiendas Oficiales</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/publicar/bomni" target="_blank">Vender</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li>
+        </nav><br>
+        <nav>
+          <ul>
+            <li><a href="register.html" target="_blank">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+            <li><a href="login.html" target="_blank">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li><a href="https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNSw6DMAxE75I1gj3LXiQywYBVh0S2KaCKu9dUYjlvft_AZaY12lkx9AGPypTIQhMqg01FcqTRjcyOlAwfCXcEBDIaiob-ew_NOL7QS_fUBKzoIdhsiROX3dn_yxlpxMN7K3DccfgQ3u7TmIuLxaxq33X5hJTKtlqbURKMhWkQbFPJLYi7sW6SFlDUjkktXI3vqEUTSO_Qm2x4_QAZcyDg5QAAAA/user" target="_blank">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+          </ul>
+            <div class="burger-menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </nav>
+      </header>
+    <main>
+        <form id="formulario-register" action="../home.html" method="get">
+        <div>
+            <input  type="text" placeholder="Nombre y Apellido" required>
+        </div>
+        <div>
+            <input type="text" placeholder="Nombre de Usuario" required>
+        </div>
+        <div>
+            <input type="email"  placeholder="Email" required>
+        </div>
+        <div>
+            <h4>Fecha de nacimiento</h4>
+            <input type="date" class="fecha-nacimiento"   required>
+        </div>
+        <div>
+            <input type="text"  placeholder="Domicilio" required>
+        </div>
+        <div>
+            <h4>Perfil de usuario:</h4>
+            <select id="perfil-usuario"  required>
+                <option value="" disabled selected>Selecione uno</option>
+                <option value="comprar">Comprar</option>
+                <option value="vender">Vender</option>
+            </select>
+        </div>
+        <div id="categorias-interes">
+            <h4>Categorías de interés</h4>
+            <div>
+                <input type="checkbox"  value="Electro">
+                <label for="categoria-electro">Electro</label>
+            </div>
+            <div>
+                <input type="checkbox" value="Moda">
+                <label for="categoria-moda">Moda</label>
+            </div>
+            <div>
+                <input type="checkbox" value="Hogar">
+                <label for="categoria-hogar">Hogar</label>
+            </div>
+            <div>
+                <input type="checkbox"  value="Juguetería">
+                <label for="categoria-jugueteria">Juguetería</label>
+            </div>
+            <div>
+                <input type="checkbox"  value="Vida sana">
+                <label for="categoria-vida-sana">Vida sana</label>
+            </div>
+        </div>
+        
+        </div>
+        <div>
+        <div>
+            <h4>Contraseña</h4>
+            <input type="password"  required>
+        </div>
+        <div>
+            <h4>Confirmar contraseña</h4>
+            <input type="password"  required>
+        </div>
+        <div>
+            <button class="boton-form-register" type="submit">Enviar</button>
+            <button class="boton-form-register" type="reset">Borrar Todo</button>
+        </div>
+    </form>
+    </main>
+    <footer>
+        <section>
+          <i class="fa-solid fa-credit-card"></i>
+          <h4>Pagá con tarjeta o en efectivo</h4>
+          <p>Con Mercado Libre Cash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
+        <section>
+          <i class="fa-solid fa-gift"></i>
+          <h4>Envío gratis desde los $2500</h4>
+          <p>Solo por estar registrado en Mercado Libre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </section>
+        <section>
+          <i class="fa-solid fa-user-shield"></i>
+          <h4>Seguridad de principio a fin</h4>
+          <p>¿No te gusta? ¡Devolvelo! En Mercado Libre no hay nada que no puedas hacer porque estás siempre protegid@.</p>
+          <p>Copyright © 1999-2024 MercadoLibre S.R.L.</p>
+        </section>
+      </footer>
+</body>
+</html>
