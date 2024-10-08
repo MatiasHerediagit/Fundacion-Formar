@@ -19,7 +19,7 @@ button {
     align-items: center;
     cursor: pointer;
     border: none;
-    border-radius: 5px; /* Para que el botón sea redondo */
+    border-radius: 5px; 
 }
 
 button i {
@@ -58,8 +58,8 @@ footer {
 
 footer section {
     display: flex;
-    flex-direction: column; /* Alinea los elementos en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
     margin-bottom: 20px;
 }
 footer section i{
