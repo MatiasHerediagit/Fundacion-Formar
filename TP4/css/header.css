@@ -19,7 +19,7 @@ button {
     align-items: center;
     cursor: pointer;
     border: none;
-    border-radius: 5px; /* Para que el botón sea redondo */
+    border-radius: 5px; 
 }
 
 button i {
