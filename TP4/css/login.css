@@ -1,60 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url(header.css);
+@import url(footer.css);
 *{
     font-family: 'Roboto', sans-serif;
 }
-body{
-    margin: 0;
-}
-header{
-    width: 100%;
-    background-color:#EAC926;
-    padding: 25px 0;
-}
-nav ul  {
-    list-style-type: none; 
-    padding: 0;  
-}
-form, p i{
-    padding-left: 10px;
-}
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px; 
-}
 
-button i {
-    font-size: 11px; 
-    color: black; 
-
-}
-p i {
-    margin-left: 30px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-}
-
-header nav .burger-menu {
-    padding: 10px; 
-    font-size: 25px; 
-    background-color: #1259c3;
-    color: white; 
-    border-radius: 5px; 
-    display: flex; 
-    justify-content: center; 
-    width: fit-content; 
-    margin: 10px auto; 
-}
 main{
-    background-color: #ebebeb;
+    background-color: var(--color-secundario);
 }
 
 #formulario-login {
@@ -65,7 +17,7 @@ main{
     margin: 0px auto; 
     box-sizing: border-box; 
     padding: 50px 10px 20px 10px;
-    background-color: #ebebeb;
+    background-color: var(--color-secundario);
 }
 #formulario-login input,
 #formulario-login button {
@@ -80,7 +32,7 @@ main{
 
 #formulario-login button {
     text-align: center;
-    background-color: #1259C3; 
+    background-color: var(--color-input); 
     color: white; 
     cursor: pointer; 
 } 
@@ -101,7 +53,7 @@ footer section {
     margin-bottom: 20px;
 }
 footer section i{
-    color: #1259c3;
+    color: var(--color-input);
     font-size: 2em;
     margin-bottom: 10px;
 }

@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <title>Login - Mercado Liebre</title>
 </head>
 <body>
   <header>
-    <img src="../images/logo-mercado-liebre.svg" alt="logo-mercado-libre" /><br /><br />
-    <form action="home.html" method="get">
-      <input type="text" placeholder="Busca aquí tus productos" /><br>
-      <button type="submit">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button><br />
-    </form><br>
-    <p> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p><br /><br />
-    <nav>
-      <ul>
-        <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
-        <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales#menu=categories" target="_blank">Tiendas Oficiales</a></li>
-        <li><a href="https://www.mercadolibre.com.ar/publicar/bomni" target="_blank">Vender</a></li>
-        <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li>
-    </nav><br>
-    <nav>
-      <ul>
-        <li><a href="register.html" target="_blank">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
-        <li><a href="login.html" target="_blank">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
-        <li><a href="https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNSw6DMAxE75I1gj3LXiQywYBVh0S2KaCKu9dUYjlvft_AZaY12lkx9AGPypTIQhMqg01FcqTRjcyOlAwfCXcEBDIaiob-ew_NOL7QS_fUBKzoIdhsiROX3dn_yxlpxMN7K3DccfgQ3u7TmIuLxaxq33X5hJTKtlqbURKMhWkQbFPJLYi7sW6SFlDUjkktXI3vqEUTSO_Qm2x4_QAZcyDg5QAAAA/user" target="_blank">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
-      </ul>
+    <div class="div-container-principal">
+        <img src="../images/logo-mercado-liebre.svg" alt="logo-mercado-libre" />
+      <form action="home.html" method="get">
+        <input type="text" placeholder="Busca aquí tus productos" />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+        <p> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+    </div>
+    <div class="div-container-nav">
+      <nav class="site-menu">
+        <ul class="ul-nav-site-menu">
+          <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
+          <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales#menu=categories" target="_blank">Tiendas Oficiales</a></li>
+          <li><a href="https://www.mercadolibre.com.ar/publicar/bomni" target="_blank">Vender</a></li>
+          <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li>
+      </nav><br>
+      <nav class="login-menu">
+        <ul class="ul-nav-login-menu">
+          <li><a href="register.html" target="_blank">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+          <li><a href="login.html" target="_blank">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+          <li><a href="https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNSw6DMAxE75I1gj3LXiQywYBVh0S2KaCKu9dUYjlvft_AZaY12lkx9AGPypTIQhMqg01FcqTRjcyOlAwfCXcEBDIaiob-ew_NOL7QS_fUBKzoIdhsiROX3dn_yxlpxMN7K3DccfgQ3u7TmIuLxaxq33X5hJTKtlqbURKMhWkQbFPJLYi7sW6SFlDUjkktXI3vqEUTSO_Qm2x4_QAZcyDg5QAAAA/user" target="_blank">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+        </nav>
+    </div>
+      <nav>
         <div class="burger-menu">
           <i class="fa-solid fa-bars"></i>
         </div>

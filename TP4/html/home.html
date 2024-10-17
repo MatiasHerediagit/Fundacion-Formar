@@ -4,34 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercado Liebre</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
   </head>
   <body>
     <header>
-      <img src="../images/logo-mercado-liebre.svg" alt="logo-mercado-libre" /><br /><br />
-      <form action="home.html" method="get">
-        <input type="text" placeholder="Busca aquí tus productos" /><br>
-        <button type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button><br />
-      </form><br>
-      <p> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p><br /><br />
-      <nav class="site-menu">
-        <ul>
-          <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
-          <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales#menu=categories" target="_blank">Tiendas Oficiales</a></li>
-          <li><a href="https://www.mercadolibre.com.ar/publicar/bomni" target="_blank">Vender</a></li>
-          <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li>
-      </nav><br>
-      <nav class="login-menu">
-        <ul>
-          <li><a href="register.html" target="_blank">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
-          <li><a href="login.html" target="_blank">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
-          <li><a href="https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNSw6DMAxE75I1gj3LXiQywYBVh0S2KaCKu9dUYjlvft_AZaY12lkx9AGPypTIQhMqg01FcqTRjcyOlAwfCXcEBDIaiob-ew_NOL7QS_fUBKzoIdhsiROX3dn_yxlpxMN7K3DccfgQ3u7TmIuLxaxq33X5hJTKtlqbURKMhWkQbFPJLYi7sW6SFlDUjkktXI3vqEUTSO_Qm2x4_QAZcyDg5QAAAA/user" target="_blank">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
-        </ul>
-        </nav>
+      <div class="div-container-principal">
+          <img src="../images/logo-mercado-liebre.svg" alt="logo-mercado-libre" />
+        <form action="home.html" method="get">
+          <input type="text" placeholder="Busca aquí tus productos" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+          <p> <i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+      </div>
+      <div class="div-container-nav">
+        <nav class="site-menu">
+          <ul class="ul-nav-site-menu">
+            <li><a href="https://www.mercadolibre.com.ar/ofertas#nav-header" target="_blank">Ofertas</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/tiendas-oficiales#menu=categories" target="_blank">Tiendas Oficiales</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/publicar/bomni" target="_blank">Vender</a></li>
+            <li><a href="https://www.mercadolibre.com.ar/ayuda#nav-header" target="_blank">Ayuda</a></li>
+        </nav><br>
+        <nav class="login-menu">
+          <ul class="ul-nav-login-menu">
+            <li><a href="register.html" target="_blank">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+            <li><a href="login.html" target="_blank">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li><a href="https://www.mercadolibre.com/jms/mla/lgz/msl/login/H4sIAAAAAAAEAzWNSw6DMAxE75I1gj3LXiQywYBVh0S2KaCKu9dUYjlvft_AZaY12lkx9AGPypTIQhMqg01FcqTRjcyOlAwfCXcEBDIaiob-ew_NOL7QS_fUBKzoIdhsiROX3dn_yxlpxMN7K3DccfgQ3u7TmIuLxaxq33X5hJTKtlqbURKMhWkQbFPJLYi7sW6SFlDUjkktXI3vqEUTSO_Qm2x4_QAZcyDg5QAAAA/user" target="_blank">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+          </ul>
+          </nav>
+      </div>
         <nav>
           <div class="burger-menu">
             <i class="fa-solid fa-bars"></i>
@@ -39,56 +42,64 @@
         </nav>
     </header>
     <main>
-      <div>
-          <img src="../images/img-home-banner.jpg" alt="banner-bienvenida" />
-      </div>
       <section>
-        <h2>Basado en tu última visita</h2>
-        <article>
-          <img src="../images/img-cafetera-moulinex.jpg" alt="imagen-cafetera-moulinex" />
-          <div class="caja-interna">
-              <div class="icono-circulo">
-                  <i class="fa-solid fa-truck"></i>
-              </div>
-              <p class="precio">$6770</p>
-              <p class="descuento">40% OFF</p>
-              <h3 class="descripcion">Cafetera Moulinex</h3>
-          </div>
-      </article>
-      
+        <div class="div-ofertas">
+          <h2>Ofertas</h2>
+        </div>
+        <div class="div-article-section">
           <article>
-              <img src="../images/img-macbook-pro-2019.jpg" alt="imagen-macbook" />
-              <div class="caja-interna">
-                <div class="icono-circulo">
+            <div class="div-img-article">
+              <img src="../images/img-cafetera-moulinex.jpg" alt="imagen-cafetera-moulinex" />
+            </div>
+            <div class="caja-interna">
                   <i class="fa-solid fa-truck"></i>
+                  <div class="div-precio-descuento">
+                    <p class="precio">$6770</p>
+                    <p class="descuento">40% off</p>
+                  </div>
+                <h3 class="descripcion">Cafetera Moulinex</h3>
+            </div>
+        </article>
+            <article>
+              <div class="div-img-article">
+                <img src="../images/img-macbook-pro-2019.jpg" alt="imagen-macbook" />
               </div>
-                  <p class="precio">$230.000</p>
-                  <p class="descuento">20% OFF</p>
-                  <h3 class="descripcion">MacBook Pro 2019</h3>
+                <div class="caja-interna">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="div-precio-descuento">
+                      <p class="precio">$230.000</p>
+                      <p class="descuento">20% OFF</p>
+                    </div>
+                    <h3 class="descripcion">MacBook Pro 2019</h3>
+                </div>
+            </article>
+            <article>
+              <div class="div-img-article">
+                <img src="../images/img-samsung-galaxy-s10.jpg" alt="imagen-samsung-s10" />
               </div>
-          </article>
-          <article>
-              <img src="../images/img-samsung-galaxy-s10.jpg" alt="imagen-samsung-s10" />
-              <div class="caja-interna">
-                <div class="icono-circulo">
-                  <i class="fa-solid fa-truck"></i>
+                <div class="caja-interna">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="div-precio-descuento">
+                      <p class="precio">$70.000</p>
+                      <p class="descuento">10% OFF</p>
+                    </div>
+                    <h3 class="descripcion">Samsung Galaxy S10</h3>
+                </div>
+            </article>
+            <article>
+              <div class="div-img-article">
+                <img src="../images/img-tv-samsung-smart.jpg" alt="imagen-smart-tv" />
               </div>
-                  <p class="precio">$70.000</p>
-                  <p class="descuento">10% OFF</p>
-                  <h3 class="descripcion">Samsung Galaxy S10</h3>
-              </div>
-          </article>
-          <article>
-              <img src="../images/img-tv-samsung-smart.jpg" alt="imagen-smart-tv" />
-              <div class="caja-interna">
-                <div class="icono-circulo">
-                  <i class="fa-solid fa-truck"></i>
-              </div>
-                  <p class="precio">$23.200</p>
-                  <p class="descuento">5% OFF</p>
-                  <h3 class="descripcion">SmartTV Samsung 43"</h3>
-              </div>
-          </article>
+                <div class="caja-interna">
+                    <i class="fa-solid fa-truck"></i>
+                    <div class="div-precio-descuento">
+                      <p class="precio">$23.200</p>
+                      <p class="descuento">5% OFF</p>
+                    </div>
+                    <h3 class="descripcion">SmartTV Samsung 43"</h3>
+                </div>
+            </article>
+        </div>
       </section>
   </main>
   

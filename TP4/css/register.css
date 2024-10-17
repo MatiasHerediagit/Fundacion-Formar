@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(header.css);
+@import url(footer.css);
 *{
     font-family: 'Roboto', sans-serif;
     padding: 0;
@@ -8,67 +10,20 @@
 body{
     margin: 0;
 }
-header{
-    width: 100%;
-    background-color:#EAC926;
-    padding: 25px 0;
-}
-nav ul  {
-    list-style-type: none; 
-    padding: 0;  
-}
-form, p i{
-    padding-left: 10px;
-}
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    padding: 2px;
-}
-
-button i {
-    font-size: 11px; 
-    color: black; 
-
-}
-p i {
-    margin-left: 30px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-weight: 400;
-}
-
-header nav .burger-menu {
-    padding: 10px; 
-    font-size: 25px; 
-    background-color: #1259c3;
-    color: white; 
-    border-radius: 5px; 
-    display: flex; 
-    justify-content: center; 
-    width: fit-content; 
-    margin: 10px auto; 
-}
 
 main {
-    background-color: #ebebeb;
-    padding: 15px;
+    background-color: var(--color-secundario);
     width: 100%;
-    max-width: 400px;
 }
 
 main form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
+    margin: 0;
+    padding-top: 20px;
+    background-color: var(--color-secundario);
 }
 
 main input[type="text"],  
@@ -93,15 +48,16 @@ h4 {
     margin: 10px 0;
 }
 
-main button {
+main div  button {
     width: 240px;
     padding:5px;
     border: none;
     border-radius: 4px;
-    background-color: #1259C3;
+    background-color: var(--color-input);
     color: white;
     cursor: pointer;
     margin:10px 0;
+    text-align: center;
 }
 
 main button:hover {
@@ -109,25 +65,3 @@ main button:hover {
 }
 
 
-footer section {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin: 20px 10px;
-}
-footer section i{
-    color: #1259c3;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-footer h4 {
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-footer p {
-    letter-spacing: 0px;
-    font-size: 14px;
-    line-height: 1.4;
-}
