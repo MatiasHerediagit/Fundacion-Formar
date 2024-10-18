@@ -4,6 +4,7 @@
 
 header {
     background-color: var(--color-principal);
+    padding-bottom: 5px;
 }
 header img{
     width: 50%;
@@ -50,7 +51,7 @@ form  {
  button i{
     background-color: var(--color-background);
 }
-p {
+header p {
     display: flex;
     box-sizing: border-box;
     width: 100%;
@@ -81,17 +82,11 @@ header nav .burger-menu {
     justify-content: center;
     width: fit-content;
     margin: 10px auto;
-}
-
+} 
 header nav.site-menu, header nav.login-menu {
     display: none;
     flex-direction: column;
 }
-
-.burger-menu {
-    display: flex;
-}
-
 @media (min-width: 768px) {
     header form {
       flex-direction: row;

@@ -8,11 +8,13 @@ main {
     text-align: center;
     flex-direction: center;
 }
-section{
+main section{
     width: 100%;
+    padding-bottom:80px;
 }
 h2{
     width: 100%;
+    padding-left: 10px;
 }
 
 .div-ofertas {
@@ -26,9 +28,6 @@ h2{
     height: auto;
 }
 
-article div p {
-    margin: 3px;
-}
 article, .div-img-article, .caja-interna{
     width: 100%;
     box-sizing: border-box;
@@ -39,9 +38,8 @@ article, .div-img-article, .caja-interna{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     background-color:var(--color-background);
-    margin: 0.5px 0 10px 0;
+    margin: 0.5px 0 ;
   }
   
   .caja-interna .fa-truck {
@@ -71,6 +69,7 @@ article, .div-img-article, .caja-interna{
     font-size: 18px;
     font-weight: bold;
     margin: 0;
+    padding: 5px 10px;
     color: var(--color-subtitulos);
   }
   
@@ -133,4 +132,29 @@ article, .div-img-article, .caja-interna{
     .div-article-section article{
         flex:1 1 calc(25% - 10px)
     }
+    article{
+      transition: box-shadow 0.5s ease;
+    }
+    article:hover{
+      box-shadow:  5px 10px 10px rgba(0,0,0,0.2);
+    }
+    .fa-truck{
+      transition: transform 0.8s ease;
+    }
+    .caja-interna:hover .fa-truck{
+      transform: rotate(270deg);
+    }
+    .descripcion{
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: opacity 1.5s ease, height 1.5s ease;
+
+
+    }
+    .caja-interna:hover .descripcion{
+      opacity: 1;
+      height: auto;
+    }
+
 }
